@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "IM_Hyemin-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Regular.woff2")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IM_Hyemin-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "paybooc-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.4fr 1.8fr 0.5fr;
+  justify-content: center;
+}
+
+.item1 {
+  margin: 2% auto;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-content: center;
+}
+
+.item2 {
+  margin: 4rem 2vw 5rem 3rem;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border-radius: 30px;
+  border: 3px solid skyblue;
+  cursor: pointer;
+  display: grid;
+  justify-content: center;
+}
+
+.item2:hover {
+  background-color: skyblue;
+  animation-name: pulsate-fwd;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-direction: alternate;
+}
+
+.item3 {
+  margin: 4rem 3rem 5rem 2vw;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border-radius: 30px;
+  border: 3px solid springgreen;
+  cursor: pointer;
+  display: grid;
+  justify-content: center;
+}
+
+.item3:hover {
+  background-color: greenyellow;
+  animation-name: pulsate-fwd;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-direction: alternate;
+}
+
+.item4 {
+  display: grid;
+  margin: 1rem auto;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+/*-------------------------GRID 설정---------------------*/
+
+#title {
+  margin-top: 3vh;
+  font-size: 30px;
+  color: black;
+  font-family: "IM_Hyemin-Regular";
+  font-size: 3.3vw;
+}
+
+#complete {
+  display: none;
+  width: 12rem;
+  height: auto;
+  font-size: 19px;
+}
+
+#go_prev {
+  display: none;
+  background-color: pink;
+  width: 12rem;
+  font-size: 19px;
+  font-family: "IM_Hyemin-Bold";
+  text-align: center;
+}
+
+#complete {
+  font-size: 19px;
+  font-family: "paybooc-bold";
+}
+
+.here_text {
+  margin: 20vh 1vw;
+}
+.val_text {
+  margin: auto auto;
+  font-size: 3em;
+  font-family: "IM_Hyemin-Regular";
+}
+
+.val_text:hover {
+  color: aliceblue;
+}
+
+.pulsate-fwd {
+  -webkit-animation: pulsate-fwd 0.5s ease-in-out infinite both;
+  animation: pulsate-fwd 0.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+  <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div style="width: 420px;">
+    <div id="login" style="text-align: right;"><a href="/login"></a></div>
+    <hr>
+    <div id="loginout" style="display: none;">
+      <span id="loginid"></span><a href="/logout">로그아웃</a>
+    </div>
+    <div>
+      <div>
+        <div>ID : <input type="text" id="id" name="id" style="width: 50%;"> </div>
+        <div>PASSWORD : <input type="password" id="pw" name="pw" style="width: 50%;"> </div>
+        <div>NICKNAME : <input type="text" id="nickname" name="nickname" style="width: 50%;"> </div>
+      </div>
+    </div>
+    <div style="margin-top:8px;text-align:right;"> <input type="button" value="회원가입" onclick="signup();" /></div>
+  </div>
+  
+  <script type="text/javascript">
+    function signup(){
+      var param = {};
+      param.id = $("#id").val();
+      param.pw = $("#pw").val();
+      param.nickname = $("#nickname").val();
+      var ajax = $.ajax({
+        url: "/signup",
+        data: param,
+        type: 'POST',
+        dataType: "JSON",
+        success: function(result){
+          alert(result.msg);
+          location.href = "/login";
+        }
+      });
+    }
+  </script>
+</body>
+</html>

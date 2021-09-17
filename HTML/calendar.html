@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar</title>
+  <link href="CSS/calendar.css" rel="stylesheet">
+  <script type="text/javascript" src="jQuery/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="whole">
+    <div id="startpage_img">
+      <img id="main_pic" src="images/head2.jpg" width="180px" height="60px" alt="메인페이지로 가는 이미지">
+      <div id="menu">
+        <div class="menu1">MEAL</div>
+        <div class="menu2">Work-Out</div>
+        <div class="menu3">Calendar</div>
+        <div class="menu4">HELP</div>
+        <div class="menu5"><img src="images/user.jpg" width="40px" height="40px"></div>
+        <div class="menu6">
+          <input id="search" type="text" placeholder="검색어 입력">
+          <button id="search_pic" type="submit"><img src="images/glass.jpg" width="30px" height="auto"></button>
+        </div>
+        <div id="menu_line"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="item1">
+      <h2>달력 들어갈 위치</h2>
+    </div>
+    <div class="item2">
+      <div class="sub_item1">
+        <h2 id="sub_title">2021.07.19 식단</h2>             <!--선택날짜 + 식단 text-->
+      </div>
+      <div class="sub_item2">
+        <ul class="meal_1">
+          <h2>1st Meal</h2>
+          <li>현미밥 150g</li>
+          <li>닭가슴살 100g</li>
+          <li>사과 1개</li>
+        </ul>
+      </div>
+      <div class="sub_item3">
+        <ul class="meal_2">
+          <h2>2nd Meal</h2>
+          <li>현미밥 150g</li>
+          <li>닭가슴살 100g</li>
+          <li>사과 1개</li>
+        </ul>
+      </div>
+      <div class="sub_item4">
+        <ul class="meal_3">
+          <h2>3rd Meal</h2>
+          <li>현미밥 150g</li>
+          <li>닭가슴살 100g</li>
+          <li>사과 1개</li>
+        </ul>
+      </div>
+      <div class="sub_item5">
+        <h2 id="total_nutrient">Total Nutrient</h2>
+        <h3 id="kcal">총 열량 : 2500kcal</h3>
+        <h3 id="carbo">탄수화물 : 250g</h3>
+        <h3 id="protein">단백질 : 120g</h3>
+        <h3 id="fat">지방 : 50g</h3>
+      </div>
+    </div>
+
+    <div class="item3">
+      <h2>해당날짜의 식단추가</h2>
+    </div>
+
+    <div class="item4">
+      <div class="sub_item1_4">
+        <h2 id="sub_title2">즐겨찾기한 식단</h2>
+        <button id="delete_fav" type="submit" title="제거"><img src="images/delete.png" width="25px" height="25px"></button>
+      </div>
+      <div class="4sub_item2_4">
+        <ul class="fav_list" id="fav_carbo">
+          <h3 font-size="20px">탄수화물</h3>
+          <li>현미밥</li>
+          <li>통밀빵</li>
+        </ul>
+      </div>
+      <div class="4sub_item3_4">
+        <ul class="fav_list" id="fav_protein">
+          <h3 font-size="20px">단백질</h3>
+          <li>닭가슴살</li>
+          <li>소 등심</li>
+        </ul>
+      </div>
+      <div class="4sub_item4_4">
+        <ul class="fav_list" id="fav_fat">
+          <h3 font-size="20px">지방</h3>
+          <li>아보카도</li>
+          <li>아몬드</li>
+        </ul>
+      </div>
+      <div class="4sub_item5_4">
+        <ul class="fav_list" id="fav_etc">
+          <h3 font-size="20px">기타</h3>
+          <li>BCAA</li>
+          <li>에너지바</li>
+        </ul>
+      </div>
+    </div>
+    <div class="item5">
+      <h2>Body Planner 식단 리스트</h2>
+    </div>
+  </div>
+  <script src="JS/calendar.js"></script>
+  
+</body>
+</html>

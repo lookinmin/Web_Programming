@@ -1,0 +1,229 @@
+#startpage_img{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#main_pic{
+  position: fixed;
+  left: 150px;
+  top: 50px;
+}
+#main_pic:hover{
+  cursor: pointer;
+}
+#title{
+  position:absolute;
+  left: 100px;
+  top: 250px;
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+}
+#menu{
+  display: flex;
+  justify-content: center;
+}
+.menu1{
+  width: 100px;
+  color: aquamarine;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  padding: 10px 5px;
+  position: absolute;
+  margin: 1% 5%;
+  left: 300px;
+  top: 50px;
+}
+.menu1:hover{
+  transition-duration: 1s;
+  cursor: pointer;
+  font-weight: bolder;
+  color: aquamarine;
+  font-size: 25px;
+}
+.menu2{
+  width: 100px;
+  color: aquamarine;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  padding: 10px 5px;
+  position: absolute;
+  left: 500px;
+  top: 50px;
+  margin: 1% 5%;
+}
+.menu2:hover{
+  transition-duration: 1s;
+  cursor: pointer;
+  font-weight: bolder;
+  color: aquamarine;
+  font-size: 25px;
+}
+.menu3{
+  width: 100px;
+  color: aquamarine;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  padding: 10px 5px;
+  position: absolute;
+  left: 700px;
+  top: 50px;
+  margin: 1% 5%;
+}
+.menu3:hover{
+  transition-duration: 1s;
+  cursor: pointer;
+  font-weight: bolder;
+  color: aquamarine;
+  font-size: 25px;
+}
+.menu4{
+  width: 100px;
+  color: aquamarine;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  padding: 10px 5px;
+  position: absolute;
+  left: 900px;
+  top: 50px;
+  margin: 1% 5%;
+}
+.menu4:hover{
+  transition-duration: 1s;
+  cursor: pointer;
+  font-weight: bolder;
+  color: aquamarine;
+  font-size: 25px;
+}
+
+#menu_line{
+  border: 2px solid aquamarine;
+  position: absolute;
+  left: 350px;
+  width: 70%;
+  top: 140px;
+  margin-bottom: 0px;
+}
+
+.exit_btn{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin-left: 200px;
+}
+.exit_btn2{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin-left: 150px;
+}
+#side_title{
+  color: black;
+  position: relative;
+  left: 20px;
+  top: 180px;
+}
+.ul_nutri{
+  margin: 50px 50px;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.ul_nutri:hover{
+  transition: 1s;
+  cursor: pointer;
+  color: aquamarine;
+  padding-bottom: 5px;
+  border-bottom: 2px solid aquamarine;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: grey;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.closebtn:hover{
+  cursor: pointer;
+}
+
+.cal_list{
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 200px;
+  background-color: green;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+}
+.pro_list{
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 200px;
+  background-color: green;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+}
+.fat_list{
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 200px;
+  background-color: green;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+}
+.other_list{
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 200px;
+  background-color: green;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+}
+
+.food_ul{
+  margin: 50px 50px;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.food_ul:hover{
+  transition: 1s;
+  cursor: pointer;
+  color: aquamarine;
+  padding-bottom: 5px;
+  border-bottom: 2px solid aquamarine;
+}

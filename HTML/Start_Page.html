@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome! Body Planner</title>
+  <link href="CSS/start_page.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="jQuery/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div class="whole">
+    <div id="startpage_img">
+      <img id="main_pic" src="images/head2.jpg" width="180px" height="60px" alt="메인페이지로 가는 이미지">
+      <div id="menu">
+        <div class="menu1">MEAL</div>
+        <div class="menu2">Work-Out</div>
+        <div class="menu3">Calendar</div>
+        <div class="menu4">HELP</div>
+        <div class="menu5"><img src="images/user.jpg" width="40px" height="40px"></div>
+        <div class="menu6">
+          <input id="search" type="text" placeholder="검색어 입력">
+          <button id="search_pic" type="submit"><img src="images/glass.jpg" width="30px" height="auto"></button>
+        </div>
+        <div id="menu_line"></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="item1">
+      <!--메인 로드 사진 + 로그인창-->
+      <img id="login_background" src="images/main1.jpg">
+      <div class="main_txt">Body Planner</div>
+    </div>
+    <div id="login_form">
+      <h2 style="color: #01ffff;">Log in</h2>
+      <div id="id_form">
+        <input type="text" id="id" placeholder="ID">
+      </div>
+      <div id="pw_form">
+        <input type="password" id="pw" placeholder="PW">
+      </div>
+      <button type="button" , id="login_btn">LOG IN</button>
+      <ul id="ul_login">
+        <li id="find_id"><a href="FindID.html" style="color: #adadad;" target="_blank">ID 찾기</a></li>
+        <li id="find_pw"><a href="FindPW.html" style="color: #adadad;" target="_blank">비밀번호 찾기</a></li>
+        <li id="no_id"><a href="members.html" style="color: #adadad;" target="_blank">회원가입</a></li>
+      </ul>
+    </div>
+
+    <div class="item2">
+      <!--설명란-->
+      <div class="intro_box" data-intro_box-margin="300">
+        <p class="intro">Body Planner와 함께 균형잡힌 식습관과 운동습관을 길러보세요</p>
+        <p class="intro">효과적인 운동효과를 위해 직접 식단을 계획하세요</p>
+        <p class="intro">정확한 운동방법과 다양한 운동을 접해보세요</p>
+      </div>
+    </div>
+
+    <div class="item3">
+      <!--식단 // 운동 선택상자-->
+      <img id="food_choice" src="images/food1.jpg" width="50%" height="90%" title="식단">
+    </div>
+
+    <div class="item4">
+      <img id="exer_choice" src="images/exer1.jpg" width="50%" height="90%" title="운동">
+    </div>
+
+    <div class="item5">
+      <!-- 뉴스 api -->
+      <div class="line"></div>
+      <h2 id="today_news">Today News</h2>
+    </div>
+
+    <div class="item6">
+      <!--리스트형식 메뉴 간략화 + 기타 url및 아이콘, 저작권 명시-->
+      <div class="sub_item1">
+        <div class="line"></div>
+      </div>
+      <div class="sub_item2">
+        <h2 id="small_title">Body Planner</h2>
+        <div class="reference">
+          <h3 id="little_title">사진 출처</h3>
+          <ul>
+            <li class="ref_list" id="ref1">Picjumbo</li>
+            <li class="ref_list" id="ref2">Burst - Shopify</li>
+            <li class="ref_list" id="ref3">Unsplash</li>
+            <li class="ref_list" id="ref4">Pexels</li>
+            <li class="ref_list" id="ref5">Pixabay</li>
+          </ul>
+        </div>
+      </div>
+      <div class="sub_item3">
+        <div class="list_position">
+          <ul class="main_list" id="food_list">
+            <h2 class="go_menu" id="meal_page">MEAL</h2>
+            <li>탄수화물</li>
+            <li>단백질</li>
+            <li>지방</li>
+            <li>기타</li>
+          </ul>
+        </div>
+      </div>
+      <div class="sub_item4">
+        <div class="list_position">
+          <ul class="main_list" id="exer_list">
+            <h2 class="go_menu" id="exer_page">Work-Out</h2>
+            <li>등 운동</li>
+            <li>가슴 운동</li>
+            <li>하체 운동</li>
+            <li>어깨 운동</li>
+            <li>팔 운동</li>
+            <li>복근 운동</li>
+            <li>유산소</li>
+          </ul>
+        </div>
+      </div>
+      <div class="sub_item5">
+        <div class="list_position">
+          <ul class="main_list" id="etc_list">
+            <h2 class="go_menu" id="cal_page">Calendar</h2>
+            <h2 class="go_menu" id="help_page">Help</h2>
+            <h2 class="go_menu" id="info_page">My info</h2>
+            <h2 class="go_menu" id="search_page">Search</h2>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub_item6">
+        <div class="pic_display">
+          <img id="insta" src="images/instagram.png" width="40px" height="auto" title="개발자 Instagram">
+          <img id="gmail" src="images/gmail.png" width="40px" height="auto" title="개발자 mail : sncalphs@gmail.com">
+          <img id="app1" src="images/app_icon1.png" width="40px" height="auto" title="Body Planner App">
+          <img id="app2" src="images/app_icon2.png" width="40px" height="auto" title="Weather Closet App">
+        </div>
+        <p id="copyright">@Copyright 2021 M&G Company<br>All Rights Reserved </p>
+      </div>
+    </div>
+  </div>
+  <script src="JS/start_page.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>식단</title>
+  <link href="CSS/meal.css" rel="stylesheet">
+</head>
+<body>
+  <div id="startpage_img">
+    <img id="main_pic" src="images/pic2.jpg" width="100px" height="100px" alt="메인페이지로 가는 이미지">
+    <p id="title">Body Planner</p>
+    <div id="menu">
+      <div class="menu1"><span style="color: black;">식단</span></div>
+      <div class="menu2">운동</div>
+      <div class="menu3">캘린더</div>
+      <div class="menu4">도움말</div>
+      <div id="menu_line"></div>
+    </div>
+  </div>
+
+  <!--사이드 메뉴-->
+  <div id="mySidenav" class="sidenav">
+    <a class="closebtn" onclick="closeNav()"><img class="exit_btn" src="images/exit.jpg"></a>
+      <div class="ul_nutri" id="cal_txt" onclick="CalList()">탄수화물</div>
+      <div class="ul_nutri" id="pro_txt" onclick="ProList()">단백질</div>
+      <div class="ul_nutri" id="fat_txt" onclick="FatList()">지방</div>
+      <div class="ul_nutri" id="other_txt" onclick="OtherList()">기타</div>
+  </div>
+
+  <div class="cal_list">
+    <a class="closebtn" onclick="closeNav2()"><img class="exit_btn2" src="images/exit.jpg"></a>
+    <div class="food_ul">탄1</div>
+    <div class="food_ul">탄2</div>
+    <div class="food_ul">탄3</div>
+    <div class="food_ul">탄4</div>
+  </div>
+  <div class="pro_list">
+    <a class="closebtn" onclick="closeNav2()"><img class="exit_btn2" src="images/exit.jpg"></a>
+    <div class="food_ul">단1</div>
+    <div class="food_ul">단2</div>
+    <div class="food_ul">단3</div>
+    <div class="food_ul">단4</div>
+  </div>
+  <div class="fat_list">
+    <a class="closebtn" onclick="closeNav2()"><img class="exit_btn2" src="images/exit.jpg"></a>
+    <div class="food_ul">지1</div>
+    <div class="food_ul">지2</div>
+    <div class="food_ul">지3</div>
+    <div class="food_ul">지4</div>
+  </div>
+  <div class="other_list">
+    <a class="closebtn" onclick="closeNav2()"><img class="exit_btn2" src="images/exit.jpg"></a>
+    <div class="food_ul">기1</div>
+    <div class="food_ul">기2</div>
+    <div class="food_ul">기3</div>
+    <div class="food_ul">기4</div>
+  </div>
+
+  <div id="side_title" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; 목록보기</div>
+  
+  <!-- 음식 목록선택하면 색 바뀌어야함 -->
+
+  <script>
+    function CalList(){
+      document.querySelector(".cal_list").style.width = "200px";
+      document.querySelector(".pro_list").style.width = "0px";
+      document.querySelector(".fat_list").style.width = "0px";
+      document.querySelector(".other_list").style.width = "0px";
+      document.getElementById("cal_txt").style.color = "aquamarine";
+      document.getElementById("pro_txt").style.color = "white";
+      document.getElementById("fat_txt").style.color = "white";
+      document.getElementById("other_txt").style.color = "white";
+    }
+    function ProList(){
+      document.querySelector(".pro_list").style.width = "200px";
+      document.querySelector(".cal_list").style.width = "0px";
+      document.querySelector(".fat_list").style.width = "0px";
+      document.querySelector(".other_list").style.width = "0px";
+      document.getElementById("cal_txt").style.color = "white";
+      document.getElementById("pro_txt").style.color = "aquamarine";
+      document.getElementById("fat_txt").style.color = "white";
+      document.getElementById("other_txt").style.color = "white";
+    }
+    function FatList(){
+      document.querySelector(".fat_list").style.width = "200px";
+      document.querySelector(".cal_list").style.width = "0px";
+      document.querySelector(".pro_list").style.width = "0px";
+      document.querySelector(".other_list").style.width = "0px";
+      document.getElementById("cal_txt").style.color = "white";
+      document.getElementById("pro_txt").style.color = "white";
+      document.getElementById("fat_txt").style.color = "aquamarine";
+      document.getElementById("other_txt").style.color = "white";
+    }
+    function OtherList(){
+      document.querySelector(".other_list").style.width = "200px";
+      document.querySelector(".cal_list").style.width = "0px";
+      document.querySelector(".pro_list").style.width = "0px";
+      document.querySelector(".fat_list").style.width = "0px";
+      document.getElementById("cal_txt").style.color = "white";
+      document.getElementById("pro_txt").style.color = "white";
+      document.getElementById("fat_txt").style.color = "white";
+      document.getElementById("other_txt").style.color = "aquamarine";
+    }
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "200px";
+    }
+    // 음식 목록 사이드 메뉴
+
+    function closeNav() {
+      document.querySelector(".cal_list").style.width = "0px";
+      document.querySelector(".pro_list").style.width = "0px";
+      document.querySelector(".fat_list").style.width = "0px";
+      document.querySelector(".other_list").style.width = "0px";
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    function closeNav2() {
+      document.querySelector(".cal_list").style.width = "0px";
+      document.querySelector(".pro_list").style.width = "0px";
+      document.querySelector(".fat_list").style.width = "0px";
+      document.querySelector(".other_list").style.width = "0px";
+      document.getElementById("cal_txt").style.color = "white";
+      document.getElementById("pro_txt").style.color = "white";
+      document.getElementById("fat_txt").style.color = "white";
+      document.getElementById("other_txt").style.color = "white";
+    }
+    //닫기 버튼으로 닫기
+
+
+    let main = document.querySelector("#main_pic");
+    main.addEventListener("click", function(){
+      location.href = "Start Page.html";
+    });
+    let exer2 = document.querySelector(".menu2");
+    exer2.addEventListener("click", function(){
+      location.href="Exercise.html";
+    });
+    let help = document.querySelector(".menu4");
+    help.addEventListener("click", function(){
+      location.href="Help.html";
+    });
+    // 다른 페이지로 이동
+  </script>
+</body>
+</html>
